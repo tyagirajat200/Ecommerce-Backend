@@ -35,7 +35,8 @@ router.post('/register', (req, res) => {
     //     return res.status(400).json({ error: 'Not a valid email' })
 
     if (!checkpassword(password)) {
-        return res.status(400).json({ error: "Password validation failed" });
+
+        return res.status(400).json({ error: "Password must contain atleast 1 Capital letter , 1 small letter , 1 symbol and  1 Number" });
     }
 
     if (password !== cpassword) {
