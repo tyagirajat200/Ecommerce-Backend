@@ -15,7 +15,7 @@ const PORT = process.env.PORT || 4000
 
 var cors = require('cors');
 var originsWhitelist = [
-'http://localhost:4402','http://localhost:4401','https://ecommerce-front.herokuapp.com'
+'http://localhost:4402','http://localhost:4401','https://ecommerce-bf1b3.web.app'
 ];
 var corsOptions = {
 origin: function(origin, callback){
